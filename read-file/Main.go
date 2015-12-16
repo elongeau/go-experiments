@@ -1,7 +1,15 @@
 package main
-import "fmt"
+import (
+	"fmt"
+	"io/ioutil"
+)
 
 
 func main() {
-	fmt.Println("cool")
+	bytes,err := ioutil.ReadFile("input.txt")
+	if err == nil {
+		fmt.Println(bytes)
+	} else {
+		fmt.Println(err)
+	}
 }
