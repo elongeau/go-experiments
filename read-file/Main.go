@@ -8,7 +8,7 @@ import (
 func main() {
 	bytes,err := ioutil.ReadFile("input.txt")
 	if err == nil {
-		fmt.Println(bytes)
+		fmt.Println(string(bytes))
 	} else {
 		fmt.Println(err)
 	}
